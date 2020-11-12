@@ -10,11 +10,9 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <div style = 'background-color:yellow; margin-bottom:20px;'>
-      <%= link_to 'sign up', new_user_registration_path %>
-    </div>
+    <div class="notice"><%= notice %></div>
+    <%= render 'layouts/navigation' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
