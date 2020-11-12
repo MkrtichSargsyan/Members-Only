@@ -1,6 +1,15 @@
-<h1>Hello Index page</h1>
+
+
+<% if user_signed_in? %>
+  <div>Signed in as... <%= @email %></div>
+<% end %>
+<hr>
+
+<h1>Hello Index page</h1> 
 <% @posts.each do |post| %>
-<%= post.user.name if post.user %>
-  <%= post.title %>
-  <%= post.description %>
+  <div>
+    <h1><%= post.user.name if post.user %></h1>
+    <h2><%= post.title %></h2>
+    <h3><%= post.description %></h3>
+  </div>
 <%end%>

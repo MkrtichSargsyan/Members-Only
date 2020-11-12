@@ -12,6 +12,10 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <div style = 'background-color:yellow; margin-bottom:20px;'>
+      <%= link_to 'sign up', new_user_registration_path %>
+      <%= link_to 'text', path %>
+    </div>
     <%= yield %>
   </body>
 </html>
