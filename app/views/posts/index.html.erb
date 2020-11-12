@@ -1,0 +1,6 @@
+<h1>Hello Index page</h1>
+<% @posts.each do |post| %>
+<%= post.user.name if post.user %>
+  <%= post.title %>
+  <%= post.description %>
+<%end%>
