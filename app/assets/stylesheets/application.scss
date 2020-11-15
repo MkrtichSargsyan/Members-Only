@@ -11,36 +11,68 @@ body {
   height: 100%;
 }
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .app_container {
   flex-grow: 1
 }
 
+// navigation
+
 .navbar {
   a {
-    color:white
-    
+    color: white
   }
 
-  a:hover{
-    color:rgb(228, 223, 215)
+  a:hover {
+    color: rgb(228, 223, 215)
   }
 }
-    
-  
+
+
 .my_bg {
-  background-color: black;
+  background-color: #060606;
+}
+
+.logo {
+  height: 40px;
+
+  img {
+    height: 100%;
+    transition: transform .2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 
 /* ------------ home page -------------*/
 
+// .home_page {
+//   width: 100%;
+//   height: 100%;
+//   background-image: asset-url("theme2.jpg");
+//   background-size: cover;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+// }
 .home_page {
-  width: 100%;
   height: 100%;
-  background-image: asset-url("Secret-Club-garage-rock-from-the-USA.jpg");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .app_description {
@@ -68,5 +100,4 @@ body {
 
 figure {
   display: flex;
-
 }
