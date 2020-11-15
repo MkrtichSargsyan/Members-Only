@@ -1,11 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light my_bg">
+<nav class="navbar navbar-expand-lg my_bg">
   <%= link_to 'Club logo', root_path, class: 'navbar-brand' %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      
       <li class="nav-item">
         <%= link_to 'Club members', users_path, class: 'nav-link' %>
       </li>
@@ -26,13 +25,13 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <% if signed_in? %>
-         <%# <% link_to "#{@current_user.name}"  %>
+        <%= link_to "#{current_user.email}", edit_user_registration_path %>
         <%= button_to "logout", destroy_user_session_path, method: :delete  %>
       <% else %>
         <li class="nav-item">
           <%= link_to 'Log in / Sign up', new_user_session_path,  class: 'nav-link' %>
         </li>
       <% end %>
-      </ul>
+    </ul>
   </div>
 </nav>

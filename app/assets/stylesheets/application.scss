@@ -11,13 +11,24 @@ body {
   height: 100%;
 }
 
-.app_container{
+.app_container {
   flex-grow: 1
 }
 
+.navbar {
+  a {
+    color:white
+    
+  }
 
+  a:hover{
+    color:rgb(228, 223, 215)
+  }
+}
+    
+  
 .my_bg {
-  background-color: #7e2811;
+  background-color: black;
 }
 
 
@@ -55,7 +66,7 @@ body {
 
 // card
 
-figure{
+figure {
   display: flex;
-  
+
 }

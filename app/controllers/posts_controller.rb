@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  # before_action :authenticate_user!, only: %i[new create]
+  before_action :authenticate_user!#, except: %i[index create]
 
   def index
     @posts = Post.all
