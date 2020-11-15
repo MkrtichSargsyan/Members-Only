@@ -5,9 +5,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
+      
       <li class="nav-item">
         <%= link_to 'Club members', users_path, class: 'nav-link' %>
       </li>
@@ -25,18 +23,16 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
       <% if signed_in? %>
-         <%# <% link_to "#{user.name}" %> 
-        
+         <%# <% link_to "#{@current_user.name}"  %>
         <%= button_to "logout", destroy_user_session_path, method: :delete  %>
       <% else %>
-        <p>Log in </p>
-        <p>Sign up</p>
+        <li class="nav-item">
+          <%= link_to 'Log in / Sign up', new_user_session_path,  class: 'nav-link' %>
+        </li>
       <% end %>
-      <%= button_to "logout", destroy_user_session_path, method: :delete  %>
-    </ul>
+      </ul>
   </div>
 </nav>
