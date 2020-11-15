@@ -17,7 +17,8 @@ body {
 }
 
 .app_container {
-  flex-grow: 1
+  flex-grow: 1;
+  // background-color: black;
 }
 
 // navigation
@@ -53,14 +54,6 @@ body {
 
 /* ------------ home page -------------*/
 
-// .home_page {
-//   width: 100%;
-//   height: 100%;
-//   background-image: asset-url("theme2.jpg");
-//   background-size: cover;
-//   background-position: center center;
-//   background-repeat: no-repeat;
-// }
 .home_page {
   height: 100%;
   position: relative;

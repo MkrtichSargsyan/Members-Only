@@ -8,13 +8,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('logo.jpeg') %>
   </head>
-
   <body class="d-flex flex-column">
     <%= render 'layouts/navigation' %>
-    <%= render 'layouts/alerts' %>
     <div class='app_container'>
+      <%= render 'layouts/alerts' %>
       <%= yield %>
-    </div>  
+    </div>
     <%= render 'layouts/footer' %>
   </body>
 </html>

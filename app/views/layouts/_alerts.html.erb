@@ -1,10 +1,12 @@
-<% if notice %>
-  <div class="alert alert-info w-50 mx-auto">
-    <%= notice %> </div>
-<% end %>
 
-<% if alert %>
-  <div class="alert alert-warning w-50 mx-auto">
-    <%= alert %>
-  </div>
-<% end %>
+
+<div class="container">
+  <% flash.each do |name,msg| %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <%= msg %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  <% end %>
+</div>
