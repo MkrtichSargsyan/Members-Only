@@ -6,7 +6,13 @@
           <div class="card-header">
             <figure class='img_100x100'>
               <%= image_tag("avatar.jpg", alt: "avatar",class:'avatar_image') %>
-              by <%= link_to "#{post.user.name}" if post.user%>
+              <h3 class='card_username'>
+                <% if signed_in? %>
+                  <%= link_to "#{post.user.name}" %>
+                <% else %>
+                  Anonymous
+                <% end %>
+              </h3>
             </figure>
           </div>
           <div class="card-body">

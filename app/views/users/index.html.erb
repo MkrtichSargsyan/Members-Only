@@ -1,0 +1,13 @@
+<div class='container'>
+  <% @users.each do |user| %>
+    <div class="row justify-content-md-center">
+      <div class= 'col-8 border'>
+        <% if signed_in? %>
+          <%= link_to "#{user.name}", user_path(user) %>
+        <% else %>
+          Anonymous
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
