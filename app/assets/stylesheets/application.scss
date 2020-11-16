@@ -54,7 +54,8 @@ body {
 
 /* ------------ home page -------------*/
 
-.home_page {
+.home_page,
+section {
   height: 100%;
   position: relative;
 
@@ -93,4 +94,31 @@ body {
 
 figure {
   display: flex;
+}
+
+// sign up
+
+section {
+
+  img {
+    object-fit: unset;
+    filter: brightness(30%);
+  }
+
+  form {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 30px;
+  }
+
+  h2{
+    color: white;
+    z-index: 100;
+  }
+
+  a{
+      color: rgb(139, 221, 218);
+      z-index: 100;
+  }
 }
