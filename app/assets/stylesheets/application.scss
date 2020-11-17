@@ -16,6 +16,9 @@ body {
   margin: 0 auto;
 }
 
+
+
+
 .app_container {
   flex-grow: 1;
   // background-color: black;
@@ -31,8 +34,18 @@ body {
   a:hover {
     color: rgb(228, 223, 215)
   }
-}
 
+
+  .dropdown-menu {
+    background-color: #3e3b3b;
+
+    a:hover {
+      background-color: #929292;
+    }
+  }
+
+
+}
 
 .my_bg {
   background-color: #060606;
@@ -54,6 +67,8 @@ body {
 
 /* ------------ home page -------------*/
 
+
+
 .home_page,
 section {
   height: 100%;
@@ -67,7 +82,16 @@ section {
     height: 100%;
     object-fit: cover;
   }
+
+  h1 {
+    font-family: 'Dancing Script', cursive;
+  }
 }
+
+.crazy_font {
+  font-family: 'Indie Flower', cursive;
+}
+
 
 .app_description {
   width: 100%;
@@ -106,19 +130,20 @@ section {
   }
 
   form {
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     border: 1px solid gray;
     border-radius: 30px;
   }
 
-  h2{
+  h2 {
     color: white;
     z-index: 100;
   }
 
-  a{
-      color: rgb(139, 221, 218);
-      z-index: 100;
+  a {
+    color: rgb(139, 221, 218);
+    z-index: 100;
   }
 }

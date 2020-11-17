@@ -6,12 +6,16 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap" rel="stylesheet">
     <%= favicon_link_tag asset_path('logo.jpeg') %>
   </head>
   <body class="d-flex flex-column">
     <%= render 'layouts/navigation' %>
     <div class='app_container'>
-      <%# <%= render 'layouts/alerts' %>
+      <!-- <%= render 'layouts/alerts' %> -->
       <%= yield %>
     </div>
     <%= render 'layouts/footer' %>

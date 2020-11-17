@@ -1,0 +1,16 @@
+<section class='d-flex flex-column align-items-center justify-content-center'>
+  <%= image_tag 'theme6.jpg' %>
+  <%= form_with(model:@post,class:'p-3',local:true) do |f|%>
+    <div class="form-group">
+      <%= f.label :title %><br />
+      <%= f.text_field :title, autofocus: true, autocomplete: "title", class: 'form-control'%>
+    </div>
+    <div class="form-group">
+      <%= f.label :description %><br />
+      <%= f.text_field :description, autofocus: true, autocomplete: "description", class: 'form-control'%>
+    </div>
+    <div class="form-group row justify-content-center">
+      <%= f.submit 'Create Task', class:'btn btn-outline-light btn-lg'%>
+    </div>
+  <% end %>
+</section>

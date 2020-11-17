@@ -10,18 +10,13 @@
       <li class="nav-item">
         <%= link_to 'Club members', users_path, class: 'nav-link' %>
       </li>
-      <li class="nav-item">
-        <%= link_to 'Tasks', posts_path, class: 'nav-link' %>
-      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Tasks
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <%= link_to 'Create new task', new_post_path, class: 'dropdown-item nav-link' %>
+          <%= link_to 'View tasks', posts_path, class: 'dropdown-item nav-link' %>
         </div>
       </li>
     </ul>
