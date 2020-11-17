@@ -1,11 +1,13 @@
 <div class="container">
-  <% @posts.each do |post| %>
-    <div class="row justify-content-md-center">
-      <div class="col-8 mt-4">
+  <div class="row">
+    <% @posts.each do |post| %>
+      <div class="col-4 mt-4">
         <div class="card text-center shadow mb-5 bg-white rounded">
           <div class="card-header">
             <figure class='img_100x100'>
-              <%= image_tag("avatar.jpg", alt: "avatar",class:'avatar_image') %>
+              <div class='image_container'>
+                <%= image_tag("avatar.jpg", alt: "avatar",class:'avatar_image') %>
+              </div>
               <h3 class='card_username'>
                 <% if signed_in? %>
                   <%= link_to "#{post.user.name}" %>
@@ -27,6 +29,6 @@
           </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
