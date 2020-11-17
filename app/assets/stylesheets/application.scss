@@ -99,6 +99,22 @@ section {
   bottom: 72px;
 }
 
+.rules_button{
+  animation-name: bgcolor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgcolor
+{
+    25%      {background:white;color:black}
+    50%      {background:black;color:white}
+    75%    {background:white;color:black}
+    100%      {background:black;color:white}
+}
+
+
+
 // tasks page
 
 .img_100x100 {
@@ -147,3 +163,4 @@ section {
     z-index: 100;
   }
 }
+
