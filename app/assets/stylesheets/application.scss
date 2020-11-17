@@ -99,21 +99,33 @@ section {
   bottom: 72px;
 }
 
-.rules_button{
+.rules_button {
   animation-name: bgcolor;
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
-@keyframes bgcolor
-{
-    25%      {background:white;color:black}
-    50%      {background:black;color:white}
-    75%    {background:white;color:black}
-    100%      {background:black;color:white}
+@keyframes bgcolor {
+  25% {
+    background: white;
+    color: black
+  }
+
+  50% {
+    background: black;
+    color: white
+  }
+
+  75% {
+    background: white;
+    color: black
+  }
+
+  100% {
+    background: black;
+    color: white
+  }
 }
-
-
 
 // tasks page
 
@@ -164,3 +176,17 @@ section {
   }
 }
 
+.rules_bg {
+  object-fit: cover;
+  background-repeat: repeat-x
+}
+
+// rules section
+.rules {
+
+  h1,
+  h3 {
+    font-family: 'Modak', cursive;
+    color:white
+  }
+}
