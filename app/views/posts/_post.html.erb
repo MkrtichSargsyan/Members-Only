@@ -28,9 +28,9 @@
           </div>
           <div class="card-body">
             <h3 class="card-title font-weight-bold font-italic"><%= post.title %></h5>
-            <p class="card-text"><%= truncate(post.description,length:100) %></p>
+            <p class="card-text"><%= post.description %></p>
           </div>
-          <div class="card-footer text-muted">
+          <div class="card-footer text-muted" style="height:75px">
             <small>
               Created <%= time_ago_in_words(post.created_at) %> ago
               edited <%= time_ago_in_words(post.updated_at) %> ago

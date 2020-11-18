@@ -129,7 +129,7 @@ section {
 
 // tasks page
 
-section.tasks_section{
+section.tasks_section {
   background-color: #1f1f1a;
 }
 
@@ -139,12 +139,12 @@ figure {
   align-items: center;
   justify-content: space-around;
 
-  .image_container{
+  .image_container {
     width: 100px;
     height: 100px;
   }
 
-  img.avatar_image{
+  img.avatar_image {
     position: unset;
     filter: brightness(200%);
     width: 100%;
@@ -193,9 +193,12 @@ section {
   h1,
   h3 {
     font-family: 'Modak', cursive;
-    color:white
+    color: white
   }
 }
 
-// tasks section
+// users section
 
+.user_card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
