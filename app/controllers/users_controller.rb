@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!#, only: %i[new create index]
+  before_action :authenticate_user! # , only: %i[new create index]
 
-  def index 
+  def index
     @users = User.all
   end
 
@@ -11,19 +11,16 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user.save
-      redirect_to posts_path
-    end
+    redirect_to posts_path if @user.save
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:name,:email,:password)
+    params.require(:user).permit(:name, :email, :password, :avatar)
   end
 
   def set_user
     @user = User.find(params[:id])
   end
-
 end
