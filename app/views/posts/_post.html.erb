@@ -3,20 +3,20 @@
     <% @posts.each do |post| %>
       <div class="col-4 mt-4">
         <div class="card text-center shadow mb-5 bg-white rounded">
-          <div class="card-header">
 
-            <figure class='img_100x100'>
+          <div class="card-header" style='background-color:#bdbdbd'>
+
+            <figure>
               <% if signed_in? %>
                 <div class='image_container'>
                   
                   <% if post.user.avatar.attached? %>
                     <%= image_tag post.user.avatar, alt: "avatar",class:'avatar_image' %>
                   <% else %>
-                  
-                  <% end %>                  
-                  
+                    <%= image_tag("avatar.jpg", alt: "avatar",class:'avatar_image') %>
+                  <% end %>                                    
                 </div>
-                <h3 class='card_username'><%= link_to "#{post.user.name}" %></h3>
+                <h3 class='card_username'><%= post.user.name %></h3>
               <% else %>
                 <div class='image_container'>
                   <%= image_tag("avatar.jpg", alt: "avatar",class:'avatar_image') %>
@@ -27,7 +27,7 @@
 
           </div>
           <div class="card-body">
-            <h5 class="card-title"><%= link_to post.title, post_path(post), class:'text-success' %></h5>
+            <h3 class="card-title font-weight-bold font-italic"><%= post.title %></h5>
             <p class="card-text"><%= truncate(post.description,length:100) %></p>
           </div>
           <div class="card-footer text-muted">

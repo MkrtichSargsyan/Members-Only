@@ -23,13 +23,6 @@
       <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
     </div>
     <div class='form-group'>
-      <%= f.label :gender %> <br />
-      <%= radio_button_tag(:gender, "male") %>
-      <%= label_tag(:gender_male, "male") %>
-      <%= radio_button_tag(:gender, "female") %>
-      <%= label_tag(:gender_female, "female") %>
-    </div>
-    <div class='form-group'>
       <div>
         <%= f.label "Profile Photo" %>
         <%= f.file_field :avatar, class:'form-control' %><br>
