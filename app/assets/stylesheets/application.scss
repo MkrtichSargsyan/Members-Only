@@ -18,18 +18,15 @@ body {
 
 .app_container {
   flex-grow: 1;
-  // background-color: black;
 }
-
-// navigation
 
 .navbar {
   a {
-    color: white
+    color: white;
   }
 
   a:hover {
-    color: rgb(228, 223, 215)
+    color: rgb(228, 223, 215);
   }
 
   .dropdown-menu {
@@ -43,40 +40,6 @@ body {
 
 .my_bg {
   background-color: #060606;
-}
-
-.logo {
-  height: 40px;
-
-  img {
-    height: 100%;
-    transition: transform .2s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-
-/* ------------ home page -------------*/
-
-.home_page,
-section {
-  height: 100%;
-  position: relative;
-
-  img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  h1 {
-    font-family: 'Dancing Script', cursive;
-  }
 }
 
 .crazy_font {
@@ -98,26 +61,24 @@ section {
 @keyframes bgcolor {
   25% {
     background: white;
-    color: black
+    color: black;
   }
 
   50% {
     background: black;
-    color: white
+    color: white;
   }
 
   75% {
     background: white;
-    color: black
+    color: black;
   }
 
   100% {
     background: black;
-    color: white
+    color: white;
   }
 }
-
-// tasks page
 
 section.tasks_section {
   background-color: #1f1f1a;
@@ -143,7 +104,37 @@ figure {
   }
 }
 
-// sign up
+.home_page,
+section {
+  height: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+.logo {
+  height: 40px;
+
+  img {
+    height: 100%;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
 
 section {
 
@@ -173,20 +164,17 @@ section {
 
 .rules_bg {
   object-fit: cover;
-  background-repeat: repeat-x
+  background-repeat: repeat-x;
 }
 
-// rules section
 .rules {
 
   h1,
   h3 {
     font-family: 'Modak', cursive;
-    color: white
+    color: white;
   }
 }
-
-// users section
 
 .user_card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
