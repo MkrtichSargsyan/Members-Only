@@ -16,9 +16,6 @@ body {
   margin: 0 auto;
 }
 
-
-
-
 .app_container {
   flex-grow: 1;
   // background-color: black;
@@ -35,7 +32,6 @@ body {
     color: rgb(228, 223, 215)
   }
 
-
   .dropdown-menu {
     background-color: #3e3b3b;
 
@@ -43,8 +39,6 @@ body {
       background-color: #929292;
     }
   }
-
-
 }
 
 .my_bg {
@@ -64,10 +58,7 @@ body {
   }
 }
 
-
 /* ------------ home page -------------*/
-
-
 
 .home_page,
 section {
@@ -91,7 +82,6 @@ section {
 .crazy_font {
   font-family: 'Indie Flower', cursive;
 }
-
 
 .app_description {
   width: 100%;
@@ -132,7 +122,6 @@ section {
 section.tasks_section {
   background-color: #1f1f1a;
 }
-
 
 figure {
   display: flex;
