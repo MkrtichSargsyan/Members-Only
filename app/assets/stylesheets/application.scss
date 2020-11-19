@@ -86,8 +86,33 @@ figure {
   }
 }
 
-.home_page,
 section {
+  img {
+    object-fit: unset;
+    filter: brightness(30%);
+  }
+
+  form {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 30px;
+  }
+
+  h2 {
+    color: white;
+    z-index: 100;
+  }
+
+  a {
+    color: rgb(139, 221, 218);
+    z-index: 100;
+  }
+}
+
+section,
+.home_page {
   height: 100%;
   position: relative;
 
@@ -115,31 +140,6 @@ section {
     &:hover {
       transform: scale(1.1);
     }
-  }
-}
-
-section {
-  img {
-    object-fit: unset;
-    filter: brightness(30%);
-  }
-
-  form {
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border: 1px solid gray;
-    border-radius: 30px;
-  }
-
-  h2 {
-    color: white;
-    z-index: 100;
-  }
-
-  a {
-    color: rgb(139, 221, 218);
-    z-index: 100;
   }
 }
 
