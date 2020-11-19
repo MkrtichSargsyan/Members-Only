@@ -24,7 +24,7 @@ This project creates a secret social media platform where only authorized member
 
 ##  Setup    <a name = "setup"></a>
 - Clone this project from github using
-- <code>$ git clone git@github.com:MkrtichSargsyan/Members-Only.git</code>
+- <code>$ git clone https://github.com/MkrtichSargsyan/Members-Only.git</code>
 - <code>cd Members-Only</code>
 - <code>$ bundle install</code>
 - <code>$ rails server</code>
