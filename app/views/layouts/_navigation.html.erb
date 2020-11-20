@@ -24,18 +24,7 @@
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
-      <% if signed_in? %>
-        <li class="nav-item">
-          <%= link_to "#{current_user.name}", edit_user_registration_path,class:"nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "logout", destroy_user_session_path,class:"nav-link", method: :delete  %>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to 'Log in / Sign up', new_user_registration_path,  class: 'nav-link' %>
-        </li>
-      <% end %>
+      <%= show_userName(current_user) %>
     </ul>
   </div>
 </nav>
