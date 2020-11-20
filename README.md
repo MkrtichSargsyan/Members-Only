@@ -28,6 +28,7 @@ This project creates a secret social media platform where only authorized member
 - <code>cd Members-Only</code>
 - <code>$ bundle install</code>
 - <code>$ yarn install</code>
+- <code>$ rails db:migrate</code>
 - <code>$ rails db:seed</code>
 - <code>$ rails server</code>
 
