@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg my_bg">
+  <div class="logo">
+    <%= link_to image_tag('logo.jpeg'), root_path %>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to 'Club members', users_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tasks
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to 'Create new task', new_post_path, class: 'dropdown-item nav-link' %>
+          <%= link_to 'View tasks', posts_path, class: 'dropdown-item nav-link' %>
+        </div>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Rules', rules_path, class: 'nav-link' %>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <%= show_user_name(current_user) %>
+    </ul>
+  </div>
+</nav>

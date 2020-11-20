@@ -1,0 +1,179 @@
+@import "bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.app_container {
+  flex-grow: 1;
+}
+
+.my_bg {
+  background-color: #060606;
+}
+
+.crazy_font {
+  font-family: 'Indie Flower', cursive;
+}
+
+.app_description {
+  width: 100%;
+  position: absolute;
+  bottom: 72px;
+}
+
+.rules_button {
+  animation-name: bgcolor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgcolor {
+  25% {
+    background: white;
+    color: black;
+  }
+
+  50% {
+    background: black;
+    color: white;
+  }
+
+  75% {
+    background: white;
+    color: black;
+  }
+
+  100% {
+    background: black;
+    color: white;
+  }
+}
+
+section.tasks_section {
+  background-color: #1f1f1a;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .image_container {
+    width: 100px;
+    height: 100px;
+  }
+
+  img.avatar_image {
+    position: unset;
+    filter: brightness(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+section {
+  img {
+    object-fit: unset;
+    filter: brightness(30%);
+  }
+
+  form {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 30px;
+  }
+
+  h2 {
+    color: white;
+    z-index: 100;
+  }
+
+  a {
+    color: rgb(139, 221, 218);
+    z-index: 100;
+  }
+}
+
+section,
+.home_page {
+  height: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+.logo {
+  height: 40px;
+
+  img {
+    height: 100%;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.navbar {
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: rgb(228, 223, 215);
+  }
+
+  .dropdown-menu {
+    background-color: #3e3b3b;
+
+    a:hover {
+      background-color: #929292;
+    }
+  }
+}
+
+.rules_bg {
+  object-fit: cover;
+  background-repeat: repeat-x;
+}
+
+.rules {
+  h1,
+  h3 {
+    font-family: 'Modak', cursive;
+    color: white;
+  }
+}
+
+.user_card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
