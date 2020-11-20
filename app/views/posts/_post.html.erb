@@ -7,22 +7,7 @@
           <div class="card-header" style='background-color:#bdbdbd'>
 
             <figure>
-              <% if signed_in? %>
-                <div class='image_container'>
-                  
-                  <% if post.user.avatar.attached? %>
-                    <%= image_tag post.user.avatar, alt: "avatar",class:'avatar_image' %>
-                  <% else %>
-                    <%= image_tag("avatar.jpg", alt: "avatar",class:'avatar_image') %>
-                  <% end %>                                    
-                </div>
-                <h3 class='card_username'><%= post.user.name %></h3>
-              <% else %>
-                <div class='image_container'>
-                  <%= image_tag("avatar.jpg", alt: "avatar",class:'avatar_image') %>
-                </div>
-                <h3 class='card_username'>Anonymous</h3>
-              <% end %>
+              <%= show_image(post.user) %>
             </figure>
 
           </div>
