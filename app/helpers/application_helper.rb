@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def show_userName(current_user)
+  def show_user_ame(current_user)
     if signed_in?
       "<li class='nav-item'>
       <p class='nav-link text-white'>#{current_user.name}</p>
