@@ -10,12 +10,11 @@ Post.create!([
   {user_id: 3, title: "Barcelona jersey", description: "Wear a Barcelona jersey in Madrid"}
 ])
 ActiveStorage::Blob.create!([
-  {key: "xz5ynvlc6poyy08f952okjuabtj7", filename: "male_avatar.jpg", content_type: "image/jpeg", metadata: {"identified"=>true, "analyzed"=>true}, byte_size: 66034, checksum: "fMAmYL1yY7o/JJOg/UGzpA=="},
-  {key: "ain6663bnohzq5a6ru203rb1y9t1", filename: "female_avatar.jpg", content_type: "image/jpeg", metadata: {"identified"=>true, "analyzed"=>true}, byte_size: 49786, checksum: "6o4KsIcNliUJYwfOzK5gyw=="},
-  {key: "gb1wrhutupctpts8v28ys4t71ior", filename: "me.jpg", content_type: "image/jpeg", metadata: {"identified"=>true, "analyzed"=>true}, byte_size: 9658635, checksum: "8eYmoGWTcxMR2yB0pqIXGg=="}
+  {id:1, key: "xz5ynvlc6poyy08f952okjuabtj7", filename: "male_avatar.jpg", content_type: "image/jpeg", metadata: {"identified"=>true, "analyzed"=>true}, byte_size: 66034, checksum: "fMAmYL1yY7o/JJOg/UGzpA=="},
+  {id:2,key: "ain6663bnohzq5a6ru203rb1y9t1", filename: "female_avatar.jpg", content_type: "image/jpeg", metadata: {"identified"=>true, "analyzed"=>true}, byte_size: 49786, checksum: "6o4KsIcNliUJYwfOzK5gyw=="},
+  {id:3,key: "gb1wrhutupctpts8v28ys4t71ior", filename: "me.jpg", content_type: "image/jpeg", metadata: {"identified"=>true, "analyzed"=>true}, byte_size: 9658635, checksum: "8eYmoGWTcxMR2yB0pqIXGg=="}
 ])
 ActiveStorage::Attachment.create!([
-  {name: "avatar", record_type: "User", record_id: 1, blob_id: 1},
   {name: "avatar", record_type: "User", record_id: 1, blob_id: 1},
   {name: "avatar", record_type: "User", record_id: 2, blob_id: 2},
   {name: "avatar", record_type: "User", record_id: 3, blob_id: 3}
