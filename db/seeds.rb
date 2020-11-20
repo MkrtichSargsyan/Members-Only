@@ -1,7 +1,7 @@
 User.create!([
-  {email: "tyler@gmail.com", encrypted_password: "$2a$12$m1pGNYRRYD.mrYHZiotAgO09zfMvCvWtT2Sxcg0oVa4NoDFgtbpTK", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, name: "Tyler Durden", status: nil},
-  {email: "marla@gmail.com", encrypted_password: "$2a$12$6xYomux7WgPylsfoTMSwTOQsotriOGfDVLdAW7UTwO5B2Retz8INu", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, name: "Marla Singer", status: nil},
-  {email: "mkrtichsargsyan24@gmail.com", encrypted_password: "$2a$12$5i8SBkkFYKVFhmNm7bg9MeleNuAnPtKxlGosCd1MLLYk4.ojY/8vS", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, name: "Mike Sargsyan", status: nil}
+  {email: "tyler@gmail.com",password:'aaaaaa', encrypted_password: "$2a$12$m1pGNYRRYD.mrYHZiotAgO09zfMvCvWtT2Sxcg0oVa4NoDFgtbpTK", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, name: "Tyler Durden", status: nil},
+  {email: "marla@gmail.com",password:'aaaaaa', encrypted_password: "$2a$12$6xYomux7WgPylsfoTMSwTOQsotriOGfDVLdAW7UTwO5B2Retz8INu", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, name: "Marla Singer", status: nil},
+  {email: "mkrtichsargsyan24@gmail.com",password:'aaaaaa', encrypted_password: "$2a$12$5i8SBkkFYKVFhmNm7bg9MeleNuAnPtKxlGosCd1MLLYk4.ojY/8vS", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, name: "Mike Sargsyan", status: nil}
 ])
 Post.create!([
   {user_id: 4, title: "Delete your social media", description: "Quitting social media is the most finely targeted way to resist the insanity of our times"},
