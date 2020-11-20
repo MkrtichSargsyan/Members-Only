@@ -1,0 +1,14 @@
+<section style='background: #0a0000;'>
+  <% @users.each do |user| %>
+    <div class="d-flex justify-content-md-center" >
+      <div class= 'user_card col-4 border mb-3 rounded-circle' style='background: #ad5050;'>
+        <figure class='m-0 p-3'>
+          <div class='image_container'>
+            <%= avatar_attached?(user) %>
+          </div>
+          <h3 class='card_username text-capitalize text-white font-italic'><%= user.name %></h3>
+        </figure>
+      </div>
+    </div>
+  <% end %>
+</section>
