@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <% @posts.each do |post| %>
+      <div class="col-4 mt-4">
+        <div class="card text-center shadow mb-5 bg-white rounded">
+
+          <div class="card-header" style='background-color:#bdbdbd'>
+
+            <figure>
+              <%= show_image(post.user) %>
+            </figure>
+
+          </div>
+          <div class="card-body" style="height:185px">
+            <h3 class="card-title font-weight-bold font-italic"><%= post.title %></h5>
+            <p class="card-text"><%= post.description %></p>
+          </div>
+          <div class="card-footer text-muted" style="height:75px">
+            <small>
+              Created <%= time_ago_in_words(post.created_at) %> ago
+              edited <%= time_ago_in_words(post.updated_at) %> ago
+            </small>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

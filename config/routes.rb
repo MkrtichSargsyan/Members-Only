@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
+  resources :posts, only: %i[new create index]
+  resources :users, only: [:index]
+  get 'rules', to: 'pages#rules'
+
+  root 'pages#home'
 end
